@@ -1,0 +1,28 @@
+.operation-phase {
+    background-color: rgba(0, 91, 150, 0.05);
+    border-left: 4px solid var(--accent-color);
+    padding: 20px;
+    margin: 30px 0;
+    border-radius: 0 5px 5px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    text-size-adjust: 0.1;
+}
+
+.operation-phase:hover {
+    background-color: rgba(0, 91, 150, 0.08);
+    transform: translateX(5px);
+}
+
+.phase-details {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 5px;
+}
+
+.phase-details strong {
+    display: block;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}

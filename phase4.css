@@ -1,0 +1,140 @@
+.phase-strategic {
+    background: linear-gradient(135deg, rgba(0,91,150,0.03) 0%, rgba(255,255,255,0.9) 100%);
+    border-left: 5px solid #4a7c59;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    margin: 40px auto;
+    max-width: 900px;
+    overflow: hidden;
+    position: relative;
+}
+
+.phase-strategic::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle, rgba(74,124,89,0.1) 0%, rgba(74,124,89,0) 70%);
+    z-index: 0;
+}
+
+.phase-header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(to right, #4a7c59, #005b96);
+    color: white;
+    position: relative;
+}
+
+.phase-icon {
+    font-size: 2rem;
+    margin-right: 15px;
+    color: #d4af37;
+}
+
+.phase-title {
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.phase-tag {
+    margin-left: auto;
+    background-color: rgba(212, 175, 55, 0.9);
+    color: #111;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.phase-content {
+    padding: 25px;
+    position: relative;
+}
+
+.phase-paragraph {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.highlight {
+    background-color: rgba(212, 175, 55, 0.2);
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-weight: 500;
+}
+
+.strategic-elements {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.element {
+    flex: 1;
+    min-width: 200px;
+    background: white;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.element:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.element i {
+    font-size: 2rem;
+    color: #4a7c59;
+    margin-bottom: 10px;
+}
+
+.element h4 {
+    color: #005b96;
+    margin: 10px 0 5px;
+}
+
+.phase-footer {
+    border-top: 1px dashed #ccc;
+    padding-top: 15px;
+    margin-top: 20px;
+}
+
+.status-indicator {
+    display: flex;
+    align-items: center;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.status-light {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.status-light.active {
+    background-color: #4a7c59;
+    box-shadow: 0 0 10px rgba(74,124,89,0.5);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
